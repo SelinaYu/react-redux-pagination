@@ -1,0 +1,113 @@
+.pagination_container{
+    font-size: 12px;
+    color: #3d4256;
+    display: inline-block;
+}
+
+.pagination_container .page_length{
+    color: #444444;
+    font-size: 14px;
+    margin-right: 20px;
+    display: inline-block;
+}
+.pagination_container .page_length .page_label{
+    margin-right: 10px;
+    display: inline-block;
+}
+.pagination_container .page_select{
+    width: 100px;
+    height: 25px;
+    line-height: 25px;
+    position: relative;
+    display: inline-block;
+}
+.pagination_container .page_select .page_tt_checkbox:checked + label + .page_option{
+    display: block;
+}
+.pagination_container .page_select .page_tt{
+     text-align: center;
+     background: url("./img/dropdown.png") no-repeat scroll right center #fff;
+     padding-right: 30px;
+     border-radius: 12px;
+     color: #444444;
+     display: block;
+     border: 1px solid #2cbfbe;     
+}
+.pagination_container .page_select .page_option{
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+.pagination_container .page_select label.sizenum
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pagination_container .page_select label.sizenum:hover{
+    background-color: #0cbfbe;
+    color:#fff;
+}
+
+.pagination_container .page_select input[type="radio"],
+.pagination_container .page_select input[type="checkbox"] {
+    display: none;
+}
+.pagination_container .page_select  input[type="radio"]:checked + label{
+    background: #dddddd;
+    color:#444444;
+}
+
+.nav-box{
+    line-height: 24px;
+    box-sizing: border-box;
+    color:#444444;
+    display: inline-block;    
+}
+.nav-box i{
+    display: inline-block;
+    line-height: 16px;
+    color: #fff;
+    width: 15px;
+    height: 15px;
+    border: none;
+    border-radius: 10px;
+     cursor: pointer;
+    vertical-align: middle;    
+}
+.nav-box i.prev{
+background: url("./img/prev_item.png") no-repeat center center;
+margin-right: 10px;
+
+}
+.nav-box i.next{
+background: url("./img/next_item.png") no-repeat  center center;
+margin-left: 10px;
+}
+.nav-box .page-no-box{
+    display: inline-block;
+}
+
+.nav-box .page-no-box li{
+    display: inline-block;
+    width: auto;
+    line-height: 16px;
+    height: 18px;
+    border-radius: 10px;
+    background: #fff;
+    padding: 0px 6px;
+    border: 1px solid #c9c9c9;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 10px;
+}
+.nav-box .page-no-box li:first-child{
+    margin-left: 0;
+}
+.nav-box .page-no-box li.current{
+    background-color: #2cbfbe;
+    color: white;    
+}
